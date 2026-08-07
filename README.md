@@ -37,9 +37,9 @@ Visualization & UI: Streamlit, Plotly Express
 ## Getting Started Locally
 
 1. Clone Repository & Install Dependencies
-git clone [https://github.com/EgySeptiandy/AirQualityPipeline.git](https://github.com/EgySeptiandy/AirQualityPipeline.git)
+'''git clone [https://github.com/EgySeptiandy/AirQualityPipeline.git](https://github.com/EgySeptiandy/AirQualityPipeline.git)
 cd AirQualityPipeline
-pip install -r requirements.txt
+pip install -r requirements.txt'''
 2. Configure Environment Variables
 SUPABASE_PASSWORD=your_supabase_password_here
 3. Run ETL Pipeline Manually
