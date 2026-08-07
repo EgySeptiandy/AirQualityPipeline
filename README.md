@@ -8,7 +8,9 @@ The entire pipeline is orchestrated seamlessly via **GitHub Actions (Cron Jobs)*
 
 ## System Architecture
 
-[ Open-Meteo API (FlatBuffers Binary) ] --> [ Python ETL Pipeline (GitHub Actions Cron Job (Every 6 Hours)) ] --> [ Supabase PostgreSQL ] (Schema: `air_quality`, Upsert Strategy) --> [ Streamlit Live Dashboard ]
+
+`
+[ Open-Meteo API (FlatBuffers Binary) ] --> [ Python ETL Pipeline (GitHub Actions Cron Job (Every 6 Hours)) ] --> [ Supabase PostgreSQL ] (Schema: `air_quality`, Upsert Strategy) --> [ Streamlit Live Dashboard ]`
 
 ## Key Technical Highlights
 
@@ -37,12 +39,9 @@ Visualization & UI: Streamlit, Plotly Express
 ## Getting Started Locally
 
 1. Clone Repository & Install Dependencies
-'''git clone [https://github.com/EgySeptiandy/AirQualityPipeline.git](https://github.com/EgySeptiandy/AirQualityPipeline.git)
-cd AirQualityPipeline
-pip install -r requirements.txt'''
 2. Configure Environment Variables
-SUPABASE_PASSWORD=your_supabase_password_here
+`SUPABASE_PASSWORD=your_supabase_password_here`
 3. Run ETL Pipeline Manually
-python etl_pipeline.py
+`python etl_pipeline.py`
 4. Launch Streamlit Dashboard
-streamlit run app.py
+`streamlit run app.py`
